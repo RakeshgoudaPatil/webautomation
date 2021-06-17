@@ -1,0 +1,99 @@
+
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    apply plugin: 'maven'
+    apply plugin: 'io.qameta.allure'
+
+
+    buildscript {
+        repositories {
+            jcenter()
+        }
+        dependencies {
+            classpath "io.qameta.allure:allure-gradle:2.5"
+
+        }
+    }
+
+
+group 'com.automationcoreframework'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile 'org.slf4j:slf4j-nop:1.7.25'
+    compile "org.ini4j:ini4j:0.5.1"
+    compile "log4j:log4j:1.2.17"
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.+'
+    implementation group: 'commons-configuration', name: 'commons-configuration', version: '1.10'
+    compile "com.fasterxml.jackson.core:jackson-core:2.9.6"
+    compile "cglib:cglib:3.2.7"
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.1'
+    compile "io.qameta.allure:allure-testng:${allure_java_version}"
+}
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+
+test {
+    useTestNG {
+        suites "${System.getProperty('suiteXmlFile', 'src/test/resources/testng.xml')}"
+    }
+
+
+}
+    allure {
+        version = "${allure_version}"
+
+        autoconfigure = true
+        aspectjweaver = true
+        clean = true
+
+        resultsDir = file("${buildDir}/test-results/allure-results")
+        reportDir = file("${buildDir}/test-results/allure-reports")
+
+        useTestNG {
+            version = "${allure_java_version}"
+        }
+
+    downloadLink = "https://github.com/allure-framework/allure2/releases/download/${allure_version}/allure-${allure_version}.zip"
+    // downloadLink = "https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/${allure_version}/allure-${allure_version}.zip"
+    }
+
+    task openAllureReport(type: Exec) {
+
+        commandLine ".allure/allure-${allure_version}/bin/allure", "open", "${buildDir}/test-results/allure-reports"
+
+        doFirst {
+            downloadAllure.execute()
+            if (file('.allure').exists()) {
+                file('.allure/allure-${allure_version}/bin/allure').setExecutable(true)
+            } else {
+                throw new RuntimeException('downloadAllure task did not execute successfully');
+            }
+        }
+    }
+
+    clean.doFirst  {
+        System.out.println "Delete build / logs / out / test-output / allure-results directories, IF they exist"
+        delete "${rootDir}/build"
+        delete "${rootDir}/logs"
+        delete "${rootDir}/out"
+        delete "${rootDir}/test-output"
+        delete "${rootDir}/allure-results"
+            exec {
+                commandLine 'bash', './cleanStaleAppium.sh'
+            }
+    }
+
+    clean.doLast {
+        System.out.println "Create logs directory"
+        mkdir "${rootDir}/logs"
+    }
+
