@@ -1,0 +1,53 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "TC_ID:03 - Verify User is able to select the Tag",
+    "uid" : "78038f0a70dea5be",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1624253442814,
+      "stop" : 1624253443868,
+      "duration" : 1054
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "TC_ID:04 - On tap of global feed, selected tag should be dismissed",
+    "uid" : "25244d67fc16c160",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1624253449547,
+      "stop" : 1624253449686,
+      "duration" : 139
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "TC_ID:01 - Verify tag is highlighted on hover",
+    "uid" : "d6b0a819d96df386",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1624253455317,
+      "stop" : 1624253455485,
+      "duration" : 168
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "TC_ID:02 - Verify User is able to select the Tag",
+    "uid" : "103cc4ff383ba1b2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1624253461214,
+      "stop" : 1624253461287,
+      "duration" : 73
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
+}

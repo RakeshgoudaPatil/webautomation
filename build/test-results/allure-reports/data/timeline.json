@@ -1,0 +1,61 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "BLRM-300068019",
+    "children" : [ {
+      "name" : "70512@BLRM-300068019.Test worker(11)",
+      "children" : [ {
+        "name" : "TC_ID:01 - Verify tag is highlighted on hover",
+        "uid" : "d6b0a819d96df386",
+        "parentUid" : "22303c57fba5575dd0bc62138126cc44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624253455317,
+          "stop" : 1624253455485,
+          "duration" : 168
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC_ID:03 - Verify User is able to select the Tag",
+        "uid" : "78038f0a70dea5be",
+        "parentUid" : "22303c57fba5575dd0bc62138126cc44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624253442814,
+          "stop" : 1624253443868,
+          "duration" : 1054
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC_ID:02 - Verify User is able to select the Tag",
+        "uid" : "103cc4ff383ba1b2",
+        "parentUid" : "22303c57fba5575dd0bc62138126cc44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624253461214,
+          "stop" : 1624253461287,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC_ID:04 - On tap of global feed, selected tag should be dismissed",
+        "uid" : "25244d67fc16c160",
+        "parentUid" : "22303c57fba5575dd0bc62138126cc44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624253449547,
+          "stop" : 1624253449686,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "22303c57fba5575dd0bc62138126cc44"
+    } ],
+    "uid" : "3e4f67d239f598a06213267f9c3030b8"
+  } ],
+  "name" : "timeline"
+}

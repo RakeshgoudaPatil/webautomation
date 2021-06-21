@@ -1,0 +1,136 @@
+{
+  "uid" : "25244d67fc16c160",
+  "name" : "TC_ID:04 - On tap of global feed, selected tag should be dismissed",
+  "fullName" : "com.central.tests.HomePageTests.VerifySelectedTagIsDismissed",
+  "historyId" : "d6f4a0b0f50229b2e901546e96eb74ee",
+  "time" : {
+    "start" : 1624253449547,
+    "stop" : 1624253449686,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "openBaseUrl",
+    "time" : {
+      "start" : 1624253443879,
+      "stop" : 1624253444540,
+      "duration" : 661
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "opening baseUrl -> https://demo.realworld.io/#/",
+      "time" : {
+        "start" : 1624253443879,
+        "stop" : 1624253444540,
+        "duration" : 661
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "driver",
+        "value" : "ChromeDriver: chrome on MAC (6d65ca62cd2dbd14934022c56c63ccf1)"
+      }, {
+        "name" : "url",
+        "value" : "https://demo.realworld.io/#/"
+      } ],
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1624253443878,
+      "stop" : 1624253443878,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1624253449687,
+      "stop" : 1624253449687,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "closeDriver",
+    "time" : {
+      "start" : 1624253461293,
+      "stop" : 1624253461375,
+      "duration" : 82
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.central.tests.HomePageTests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.central.tests.HomePageTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "VerifySelectedTagIsDismissed"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Gradle suite"
+  }, {
+    "name" : "suite",
+    "value" : "Gradle test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.central.tests.HomePageTests"
+  }, {
+    "name" : "host",
+    "value" : "BLRM-300068019"
+  }, {
+    "name" : "thread",
+    "value" : "70512@BLRM-300068019.Test worker(11)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "25244d67fc16c160.json",
+  "parameterValues" : [ ]
+}

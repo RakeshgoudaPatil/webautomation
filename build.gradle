@@ -27,11 +27,12 @@ repositories {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testImplementation group: 'org.testng', name: 'testng', version: '6.14.3'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     compile 'org.slf4j:slf4j-nop:1.7.25'
     compile "org.ini4j:ini4j:0.5.1"
     compile "log4j:log4j:1.2.17"
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.+'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     implementation group: 'commons-configuration', name: 'commons-configuration', version: '1.10'
     compile "com.fasterxml.jackson.core:jackson-core:2.9.6"
     compile "cglib:cglib:3.2.7"
@@ -43,10 +44,10 @@ dependencies {
 
 test {
     useTestNG {
-        suites "${System.getProperty('suiteXmlFile', 'src/test/resources/testng.xml')}"
+        "${System.getProperty('suiteXmlFile', 'src/test/resources/testng.xml')}"
     }
 
-
+    finalizedBy 'allureReport'
 }
     allure {
         version = "${allure_version}"
@@ -63,7 +64,6 @@ test {
         }
 
     downloadLink = "https://github.com/allure-framework/allure2/releases/download/${allure_version}/allure-${allure_version}.zip"
-    // downloadLink = "https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/${allure_version}/allure-${allure_version}.zip"
     }
 
     task openAllureReport(type: Exec) {
@@ -71,7 +71,7 @@ test {
         commandLine ".allure/allure-${allure_version}/bin/allure", "open", "${buildDir}/test-results/allure-reports"
 
         doFirst {
-            downloadAllure.execute()
+            downloadAllure.doFirst {}
             if (file('.allure').exists()) {
                 file('.allure/allure-${allure_version}/bin/allure').setExecutable(true)
             } else {
@@ -87,9 +87,6 @@ test {
         delete "${rootDir}/out"
         delete "${rootDir}/test-output"
         delete "${rootDir}/allure-results"
-            exec {
-                commandLine 'bash', './cleanStaleAppium.sh'
-            }
     }
 
     clean.doLast {

@@ -1,0 +1,41 @@
+[ {
+  "uid" : "78038f0a70dea5be",
+  "name" : "TC_ID:03 - Verify User is able to select the Tag",
+  "time" : {
+    "start" : 1624253442814,
+    "stop" : 1624253443868,
+    "duration" : 1054
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6b0a819d96df386",
+  "name" : "TC_ID:01 - Verify tag is highlighted on hover",
+  "time" : {
+    "start" : 1624253455317,
+    "stop" : 1624253455485,
+    "duration" : 168
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25244d67fc16c160",
+  "name" : "TC_ID:04 - On tap of global feed, selected tag should be dismissed",
+  "time" : {
+    "start" : 1624253449547,
+    "stop" : 1624253449686,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "103cc4ff383ba1b2",
+  "name" : "TC_ID:02 - Verify User is able to select the Tag",
+  "time" : {
+    "start" : 1624253461214,
+    "stop" : 1624253461287,
+    "duration" : 73
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

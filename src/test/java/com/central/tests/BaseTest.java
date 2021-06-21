@@ -77,6 +77,8 @@ public class BaseTest implements ILogger {
 
 
 
+
+
     @AfterMethod(alwaysRun = true)
     public void afterMethod(ITestContext context, Method method, ITestResult result) {
         LOG.info(String.format("%s - afterMethod", getClass().getSimpleName()));

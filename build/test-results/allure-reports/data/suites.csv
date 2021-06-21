@@ -1,0 +1,5 @@
+"Status","Name","Duration in ms","Description"
+"passed","com.central.tests.HomePageTests.VerifyTagIsHighlightedOnHover","168",""
+"passed","com.central.tests.HomePageTests.VerifyPage2Navigation","1054",""
+"passed","com.central.tests.HomePageTests.VerifyUserIsAbleToSelectTheTag","73",""
+"passed","com.central.tests.HomePageTests.VerifySelectedTagIsDismissed","139",""

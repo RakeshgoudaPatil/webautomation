@@ -1,0 +1,6 @@
+com/central/tests/HomePageTests.java
+ com.central.tests.HomePageTests
+com/central/pages/HomePage.java
+ com.central.pages.HomePage
+com/central/tests/BaseTest.java
+ com.central.tests.BaseTest

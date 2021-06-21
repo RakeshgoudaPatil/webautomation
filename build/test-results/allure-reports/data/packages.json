@@ -1,0 +1,57 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "com.central.tests.HomePageTests",
+    "children" : [ {
+      "name" : "VerifyPage2Navigation",
+      "uid" : "78038f0a70dea5be",
+      "parentUid" : "c0de8fbb820662f54eecdef09543b882",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624253442814,
+        "stop" : 1624253443868,
+        "duration" : 1054
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "VerifySelectedTagIsDismissed",
+      "uid" : "25244d67fc16c160",
+      "parentUid" : "c0de8fbb820662f54eecdef09543b882",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624253449547,
+        "stop" : 1624253449686,
+        "duration" : 139
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "VerifyTagIsHighlightedOnHover",
+      "uid" : "d6b0a819d96df386",
+      "parentUid" : "c0de8fbb820662f54eecdef09543b882",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624253455317,
+        "stop" : 1624253455485,
+        "duration" : 168
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "VerifyUserIsAbleToSelectTheTag",
+      "uid" : "103cc4ff383ba1b2",
+      "parentUid" : "c0de8fbb820662f54eecdef09543b882",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624253461214,
+        "stop" : 1624253461287,
+        "duration" : 73
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.central.tests.HomePageTests"
+  } ],
+  "name" : "packages"
+}

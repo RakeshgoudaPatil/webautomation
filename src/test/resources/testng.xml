@@ -9,7 +9,7 @@
 
     <test name="Test Scenario" parallel="methods">
         <packages>
-            <package name="com.central.tests"/>
+            <package name="com.central.tests."/>
         </packages>
     </test>
 
